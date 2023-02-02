@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BrowserAppActivity"
+    android:layout_marginHorizontal="20dp">
+
+    <EditText
+        android:id="@+id/url_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="http://developer.android.com"/>
+
+    <Button
+        android:id="@+id/open_website_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open WebSite"
+        app:layout_constraintStart_toStartOf="@id/url_field"
+        app:layout_constraintTop_toBottomOf="@id/url_field"/>
+
+    <EditText
+        android:id="@+id/text_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Twas brilling and the slithy toves"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/open_website_button"
+        app:layout_constraintTop_toBottomOf="@id/open_website_button"/>
+
+    <Button
+        android:id="@+id/share_text_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share this text"
+        app:layout_constraintStart_toStartOf="@id/text_field"
+        app:layout_constraintTop_toBottomOf="@id/text_field"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
